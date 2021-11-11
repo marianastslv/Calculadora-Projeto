@@ -9,7 +9,7 @@
     max-height: 120vh;
 }
     
-#resultado{
+input{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     background-color: white;
@@ -21,6 +21,7 @@
     font-size: 15px;
     padding: 3px  0;
     margin-bottom: 5px;
+    width: 90px;
 }
 
 tr{

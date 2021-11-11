@@ -12,11 +12,11 @@
 </head>
 <body>
         <div id="container">
-            <p id="resultado"></p>
+            <input type="text" value=" " id="resultado" disabled>
             <table>
                 <tr>
-                    <td><button onclick="limpar('C')" id="limpar">C</button></td>
                     <td><button onclick="apagarCaracter('<')" ><</button></td>
+                    <td><button onclick="limpar('C')" id="limpar">C</button></td>
                     <td><button onclick="inserir('/')" class="operador">/</button></td>
                     <td><button onclick="inserir('x')" class="operador">x</button></td>
                 </tr>
@@ -40,7 +40,7 @@
                 </tr>
                 <tr>
                     <td><button colspan="2" onclick="inserir('0')" id="btn0">0</button></td>
-                    <td><button onclick="inserir('.')" class="operador">.</button></td>
+                    <td><button onclick="inserir('.')">.</button></td>
                 </tr>
             </table>
         </div>    
