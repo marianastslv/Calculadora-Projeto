@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="../css/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/calculadora.js"></script>
+</head>
+<body>
+        <div id="container">
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button onclick="limpar('C')" id="limpar">C</button></td>
+                    <td><button onclick="apagarCaracter('<')" ><</button></td>
+                    <td><button onclick="inserir('/')" class="operador">/</button></td>
+                    <td><button onclick="inserir('x')" class="operador">x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('7')">7</button></td>
+                    <td><button onclick="inserir('8')">8</button></td>
+                    <td><button onclick="inserir('9')">9</button></td>
+                    <td><button onclick="inserir('-')" class="operador">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('4')">4</button></td>
+                    <td><button onclick="inserir('5')">5</button></td>
+                    <td><button onclick="inserir('6')">6</button></td>
+                    <td><button onclick="inserir('+')" class="operador">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('1')">1</button></td>
+                    <td><button onclick="inserir('2')">2</button></td>
+                    <td><button onclick="inserir('3')">3</button></td>
+                    <td rowspan="2" onclick="calcular('=')"><button id="igualdade">=</button></td>
+                </tr>
+                <tr>
+                    <td><button colspan="2" onclick="inserir('0')" id="btn0">0</button></td>
+                    <td><button onclick="inserir('.')" class="operador">.</button></td>
+                </tr>
+            </table>
+        </div>    
+</body>
+</html>
